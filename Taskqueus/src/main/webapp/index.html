@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Hello App Engine</title>
+  </head>
+
+  <body>
+  <a href = "http://localhost:8080/_ah/admin">Admin</a> | <a href = "/">Back</a><br><br>
+    <h1>Task Queues example</h1>
+    <form action="create">
+    <input type = "text" placeholder = "name" name = "name">
+    <button type = "submit">Create an entity</button>
+    </form><br><br>
+    
+    Use this form to update numbers using taskqueues on given entities
+    <form action = "hello">
+    <input type = "text" placeholder = "enter the enitity key" name = "key">
+    <input type = "text" placeholder = "enter number to update" name = "number">
+    <button type = "submit">Update number</button>
+    </form>
+  	
+  </body>
+</html>
