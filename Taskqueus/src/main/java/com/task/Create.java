@@ -33,11 +33,13 @@ public class Create extends HttpServlet {
 		String name = request.getParameter("name");
 		Entity ent = new Entity("Task");
 		ent.setProperty("Name", request.getParameter("name"));
+		ent.setProperty("Number", null);
+		ent.setProperty("Marks", null);
 		datastore.put(ent);
-		
-		response.getWriter().println("To update numbers .. go to ");
+		response.sendRedirect("/");
+		//response.getWriter().println("To update numbers .. go to ");
 		response.getWriter().println("<a href = \"index.html\">Home</a><br>");
-		response.getWriter().println("To view admin go to <a href = \"http://localhost:8080/_ah/admin\">Admin</a>");
+		response.getWriter().println("To view admin go to <a href = \"/_ah/admin\">Admin</a>");
 	}
 
 }

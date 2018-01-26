@@ -6,19 +6,19 @@
   </head>
 
   <body>
-  <a href = "http://localhost:8080/_ah/admin">Admin</a> | <a href = "readentries">Read</a> | <a href = "/">Home</a><br><br>
+  <a href = "/_ah/admin">Admin</a> | <a href = "readentries">Read</a> | <a href = "/">Home</a><br><br>
     <h1>Task Queues example</h1>
     <form action="create">
     <input type = "text" placeholder = "name" name = "name">
     <button type = "submit">Create an entity</button>
     </form><br><br>
     
-    Use this form to update numbers using taskqueues on given entities
-    <form action = "taskscheduler">
-    <input type = "text" placeholder = "enter the enitity key" name = "key">
-    <input type = "text" placeholder = "enter number to update" name = "number">
-    <button type = "submit">Update number</button>
-    </form>
+    Use this to update ID numbers using push queues ->
+	<a href = "/pushtask">Push task</a>
   	
+  	<br>
+  	Use this to fetch marks and update marks
+  	<a href = "/pullqueuescheduler">Add to pull queue</a>
+  	 | <a href = "/pullqueueworker">Pull queue worker</a>
   </body>
 </html>
