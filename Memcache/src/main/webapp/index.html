@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Memcache - Tutorials</title>
+  </head>
+
+  <body>
+    <h1>Memcache example.</h1>
+  	<form action = "create"><br>
+		Name: <input type = "text" name = "uname"><br>
+		Number: <input type = "text" name = "unum"><br>
+		Address: <input type = "text" name = "uaddress"><br>
+		<button type = "submit">Create Entry</button> 	
+  	</form>
+  <br>
+  Add Entities Objects to memcaches
+  <form action="addvalues">
+  Enter the key of entity <input type = "text" name = "keym" placeholder = "key">
+	<button type = "submit">Add to memcache</button>
+  </form><br>
+
+  Get Entities from memcaches/datastore
+  <form action="getvalues">
+  Enter the key of entity <input type = "text" name = "keymg" placeholder = "key">
+	<button type = "submit">Get from memcache</button>
+  </form><br>  
+
+  </body>
+</html>
